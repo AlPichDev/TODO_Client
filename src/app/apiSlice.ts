@@ -4,7 +4,7 @@ import { ITask } from './types'
 export let apiSlice = createApi({
     reducerPath: 'api',
     tagTypes: ['Task'],
-    baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:5000/api'}),
+    baseQuery: fetchBaseQuery({baseUrl: 'https://todoserver-production-e8cc.up.railway.app/api'}),
     endpoints: builder => ({
         register: builder.mutation({
             query: body => ({
